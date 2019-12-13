@@ -1,0 +1,104 @@
+// Use IntelliSense to learn about possible attributes.
+// Hover to view descriptions of existing attributes.
+// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome 127.0.0.1",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9299,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:53499/p/mypet-node/index.html?_cmAuth\u003dgopqchvrfp"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (1)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9207,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:53499/p/mypet-node/count.html?_cmAuth\u003dgopqchvrfp"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (2)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9294,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:53499/p/mypet-node/counter.html?_cmAuth\u003dgopqchvrfp"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (3)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9213,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:53499/p/mypet-node/onchange.html?_cmAuth\u003dgopqchvrfp"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (4)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9281,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:53499/p/mypet-node/gender-checker.html?_cmAuth\u003dgopqchvrfp"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (5)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9257,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:53499/p/mypet-node/switch.html?_cmAuth\u003dgopqchvrfp"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (6)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9238,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:53499/p/mypet-node/switch1.html?_cmAuth\u003dgopqchvrfp"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (7)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9226,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:53499/p/mypet-node/loop.html?_cmAuth\u003dgopqchvrfp"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (8)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9292,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:53499/p/mypet-node/object1.html?_cmAuth\u003dgopqchvrfp"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (9)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9273,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:53499/p/mypet-node/object2.html?_cmAuth\u003dgopqchvrfp"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (10)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9220,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:53499/p/mypet-node/object.html?_cmAuth\u003dgopqchvrfp"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (11)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9206,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:53499/p/mypet-node/VendingMachine.html?_cmAuth\u003dgopqchvrfp"
+    }
+  ]
+}

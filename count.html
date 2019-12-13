@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<div id="count">0</div>
+	<button id="increase">+</button>
+	<button id="decrease">-</button>
+	
+	<script>
+		const $count = document.getElementById('count')
+		const $increase = document.getElementById('increase')
+		const $decrease = document.getElementById('decrease')
+
+		let num = 0;
+		const updown = function (){$count.innerHTML = num;}
+		//함수선언문 
+
+		$increase.onclick = function(){
+			num++;
+			// $count.innerHTML = num --> 두개 문장이 반복이 되면 안좋다 
+			//그리고 값이 바뀌지 않고 고정이 되니까 let이 아니라 const로 해서 상수처리해준다.
+			console.log('숫자 올라간다!',num)
+			updown();
+
+		}
+		//es5버전
+		$decrease.onclick =()=>{
+			num--;
+			// $count.innerHTML = num
+			console.log('숫자 내려간다',num)
+			$count.innerHTML = num;
+			updown();
+		}
+		//es6버전
+	</script>	
+</body>
+</html>

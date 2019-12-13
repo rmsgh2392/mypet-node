@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box">
+		<h3>성별은 무엇???</h3>
+		<input type="radio" name="gender" id="" value="M" checked>남
+		<input type="radio" name="gender" id="" value="F" checked>여
+		<br>
+		<h3>결혼 유/무??</h3>
+		<input type="radio" name="marry" id="" value="Y" checked>기혼
+		<input type="radio" name="marry" id="" value="N" checked>미혼
+		<br>
+		<input id="btn" type="button" value="확인" style="font-size: -webkit-xxx-large;border-width: thick;
+    	background-color: lavender;">
+	</div>
+
+	<script>
+		window.onload = function(){
+			const $box = document.getElementById('box')
+			const $genders = document.getElementsByName('gender')
+			const $marry = document.getElementsByName('marry')
+			const $btn = document.getElementById('btn')
+
+			let msg = ''
+			//function aa(){}
+			//const a = new aa()생성자 함수가 되지만 안하는게 좋다 .
+			$btn.onclick = function(){//이 함수는 메서드 이므로 기능을 다하고 제거됨 
+				if(msg ==''){
+					let str = ''
+					str = ($genders[0].checked == true) 
+					? ($marry[0].checked == true)
+						?'<h1>기혼남성</h1>' :'<h1>미혼남성</h1>'
+					: ($marry[0].checked == true)
+						 ?'<h1>기혼여성</h1>' :'<h1>미혼여성</h1>'
+					// alert(str)
+					$box.removeChild(this)
+					msg = box.innerHTML;
+					$box.innerHTML = str
+					$box.appendChild(this)
+					alert(this.value)
+			}else{
+				$box.innerHTML = msg
+				$box.appendChild(this)
+				msg = ''
+			}
+		}	
+	}
+	</script>
+</body>
+</html>

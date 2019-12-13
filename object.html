@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<script>
+window.onload = function(){
+	// let member = function(){}//객체가 아니다 메서드를 멤버라는 프로퍼티 안에 값을 할당하고 객체는 window 프로퍼티를 만드는 과정 
+	 function Member (){
+		 //this 는 곧 객체를 뜻한다.
+		this.name = name
+		this.gender = gender
+		 
+	}
+	let member = new Member() //member는 인스턴스 
+	let member1 = function(){//memeber1은 window의 property에 속함 
+		member.name = '박씨'
+		member.gender = '남성'
+		alert(`${this.name}${this.gender}`)
+	}
+	member1()
+}	
+</script>
+</body>
+</html>

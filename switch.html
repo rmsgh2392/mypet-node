@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function Test01(){//이것을 전역으로 걸쳐서 보여주게 하자 !
+			this.make = function(){
+				const input1 = document.createElement('input')
+				input1.setAttribute('type','text')
+				input1.setAttribute('id','val')
+				const br = document.createElement('br')
+				const input2 = document.createElement('input')
+				input2.setAttribute('type','button')
+				input2.setAttribute('value','클릭할거냐')
+				input2.setAttribute('id','btn')
+				document.body.appendChild(input1)
+				document.body.appendChild(br)
+				document.body.appendChild(input2)
+			}
+		}
+		function Test02(){
+			this.play = function(){
+				if(input == undefined || input == null || input == ''){
+					alert('글을 입력하세요')
+				}else{
+					alert((input.value == '') ? input.value:'먼저 입력하셈')
+					input.focus()
+				}
+				choice.value = 0
+			}
+		}
+		factory = function (type){
+				switch(type){
+				case '1' : 
+					return new Test01()
+				case '2' : 
+					return new Test02()
+			}
+		}
+		
+		window.onload =()=>{
+			const t1 = factory('1')
+			t1.make()
+			// const input = document.createElement('input')
+			// input.setAttribute('type','button')
+			// input.setAttribute('id','btn')
+			// input.setAttribute('value','클릭하세요')
+			// document.body.appendChild(input)
+			//처음에 했던거 
+			// const cho = document.getElementsByTagName('choice')
+			// cho[0].onchange = function(){
+			// 	if(this.value !=0){
+			// 		const obj = factory(this.value)
+			// 		obj.play(this)
+			// 	}
+			// }여기까지 두번째
+			// const t01 = new Test01()
+			// const t02 = new Test02()
+			// input.onclick = function(){
+			// 	switch(t01){
+			// 	case t01 : prompt('값은??',t01.num) 
+			// 		break
+			// 	case t02 : alert(t02.name)
+			// 		break
+			// }
+			}	
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body
+	<div id="counter">1</div>
+	<button id="increase">더하기</button>
+	<button id="decrease">뺴기</button>
+
+	<script>
+		window.onload = function(){
+		//{}으로 감싸줘야 다른 곳에서 쓸 때 충돌이 안난다 왜냐하면
+		//가비지컬렉터가 지역변수는 한번 사용하고 꺼버리면 지워준다.
+		
+		const $increase = document.getElementById('increase')
+		const $decrease = document.getElementById('decrease')
+		const $counter = document.getElementById('counter')
+		let number = 1;
+		const render = function (){$counter.innerHTML = number;}
+
+		$increase.ondblclick =()=>{
+			number++;
+			console.log('더하기더하기')
+			render()
+		}
+		$decrease.onclick =()=>{
+			number--;
+			console.log('뺴기뺴기')
+			render()
+		}
+	}
+
+	</script>
+</body>
+</html>
